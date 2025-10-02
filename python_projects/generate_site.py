@@ -1,4 +1,6 @@
+import os
 
+html_content = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,3 +36,9 @@
     </div>
 </body>
 </html>
+"""
+
+with open('index.html', 'w') as f:
+    f.write(html_content)
+
+print("Website generated successfully!")

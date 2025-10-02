@@ -1,0 +1,33 @@
+#
+help                    # See all commands
+show exploits           # List all exploits
+search portscan         # Search for port scanning modules
+use auxiliary/scanner/portscan/tcp
+show options
+set RHOSTS 192.168.1.1
+run
+exit                    # To leave Metasploit
+# Identify the web server version
+use auxiliary/scanner/http/http_version
+set RHOSTS 192.168.1.1
+run
+# Scan for directories
+use auxiliary/scanner/http/dir_scanner
+set RHOSTS 192.168.1.1
+run
+# Or try a more advanced directory scanner
+use auxiliary/scanner/http/dir_listing
+set RHOSTS 192.168.1.1
+run
+# Use nikto for web scanning
+nikto -h http://192.168.1.1
+# Use gobuster for directory busting
+gobuster dir -u http://192.168.1.1 -w /usr/share/wordlists/dirb/common.txt
+# Use whatweb to identify technologies
+whatweb http://192.168.1.1
+msfconsole
+use auxiliary/scanner/http/http_version
+set RHOSTS 192.168.1.1
+run
+nikto -h http://192.168.1.1
+exit

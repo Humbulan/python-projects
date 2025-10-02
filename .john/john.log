@@ -1,0 +1,13 @@
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Command line: john --format=raw-md5 hash.txt --wordlist=/usr/share/wordlists/rockyou.txt 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 Autotune found best speed at MKPC of 2048 (256 * 8)
+0:00:00:00 - Hash type: Raw-MD5 (min-len 0, max-len 18 [worst case UTF-8] to 55 [ASCII])
+0:00:00:00 - Algorithm: MD5 128/128 ASIMD 4x2
+0:00:00:00 - Configured to use otherwise idle processor cycles only
+0:00:00:00 - Will reject candidates longer than 55 bytes
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 16384
+0:00:00:00 Proceeding with wordlist mode
+0:00:00:00 Terminating on error, wordlist.c:564

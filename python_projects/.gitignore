@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+myenv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Data files
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

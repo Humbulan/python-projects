@@ -1,0 +1,13 @@
+include:
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.png"
+  - "*.jpg"
+  - "*.jpeg"
+  - "*.gif"
+exclude:
+  - "venv/"
+  - "*.py"
+  - "requirements.txt"
+  - ".cache/"
